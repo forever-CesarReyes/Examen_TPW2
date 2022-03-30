@@ -16,25 +16,39 @@ class Home extends BaseController
     public function registro(){
         return view('vRegistro');
     }
+    public function registro_gasto(){
+        return view('vRegistro_gasto');
+    }
     public function insertarForm(){
         $mUsuarios = new mUsuarios();
         $usuarioNuevo = [
-            "usuario"=>$_POST['email'],
-            "password"=>$_POST['password'],
             "nombre"=>$_POST['nombre'],
             "apellido"=>$_POST['apellido'],
             "edad"=>$_POST['edad'],
-            "marca"=>$_POST['marca'],
-            "costo"=>$_POST['costo'],
-            "membresia"=>$_POST['membresia']
+            "correo"=>$_POST['correo'],
+            "password"=>$_POST['password']
 
-            
         ];
         $mUsuarios->insert($usuarioNuevo);
         $datoId['idRegistrado'] = $mUsuarios->db->insertID();
 
         return view("vSuccess", $datoId);
+    }
+    public function registro_gasto(){
+        return view('vRegistro_gasto');
+    }
+    public function insertarForm_gasto(){
+        $mGastos = new mGastos();
+        $gastoNuevo = [
+            "monto"=>$_POST['monto'],
+            "fecha"=>$_POST['fecha'],
+            "descripcion"=>$_POST['descripcion'],
+            "id_categoria"=>$_POST['id_categoria'],
 
+        ];
+        $mGastos->insert($gastoNuevo);
+        $datoId['idRegistrado'] = $mGasto->db->insertID();
+
+        return view("vSuccess", $datoId);
     }
 }
-

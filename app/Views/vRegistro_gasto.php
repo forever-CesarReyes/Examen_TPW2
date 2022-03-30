@@ -10,19 +10,17 @@
 <body>
     <div class="container">
     <h1>Encuesta a clientes</h1>
-    <form method="POST" action="../Home/insertarForm">
+    <form method="POST" action="../Home/insertarForm_gasto">
 
-        <label for="nombre">nombre</label>
+        <label for="monto">monto</label>
         <input type="text" id="nombre" name="nombre"><br>
-        <label for="apellido">apellido</label>
-        <input type="text" id="apellido" name="apellido"><br>
-        <label for="edad">edad</label>
-        <input type="text" id="edad" name="edad"><br>
-        <label for="correo">Email</label>
-        <input type="correo" id="correo" name="correo"
-        placeholder="email@example.com"><br>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"><br>
+        <label for="fecha">fecha</label>
+        <input type="date" id="fecha" name="fecha"><br>
+        <label for="descripcion">descripcion</label>
+        <input type="text" id="descripcion" name="descripcion"><br>
+        <label for="categoria">Categoria</label>
+        <input type="id_categoria" id="id_categoria" name="id_categoria"><br>
+
 
         <button type="submit"> Registrar </button>
     </form>
