@@ -1,16 +1,16 @@
 <?php
 namespace App\Models;
 use CodeIgniter\Model;
-class mUsuarios extends Model{
-protected $table = 'usuarios';
-protected $primarykey = 'id_usuario';
+class mGastos extends Model{
+protected $table = 'gastos_p';
+protected $primarykey = 'id_gastos';
 
 protected $useAutoIncrement = true;
 
 protected $returnType = 'array';
 protected $useSoftDeletes = true;
 
-protected $allowedFields = ['nombre','apellido','edad','correo ','password'];
+protected $allowedFields = ['monto','fecha','descripcion','id_categoria '];
 
 
 protected $useTimestamps = false;
