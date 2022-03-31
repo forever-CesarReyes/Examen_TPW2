@@ -7,6 +7,7 @@ CREATE TABLE usuarios(
   edad int NOT NULL,
   correo varchar(50) NOT NULL,
   password varchar(50) NOT NULL
+  deleted_at timestamp
 )
 
 CREATE TABLE gastos_p(
@@ -15,9 +16,16 @@ CREATE TABLE gastos_p(
   fecha date,
   descripcion varchar(100),
   id_categoria int
+  deleted_at timestamp
 )
 
 CREATE TABLE categorias(
   id_categoria int NOT NULL AUTOINCREMENT PRIMARY KEY,
   categoria varchar(50),
 )
+
+INSERT INTO categorias (categiria) VALUES("Alimentacion");
+INSERT INTO categorias (categiria) VALUES("Vestimenta");
+INSERT INTO categorias (categiria) VALUES("Transporte");
+INSERT INTO categorias (categiria) VALUES("Entretenimiento");
+INSERT INTO categorias (categiria) VALUES("Salud");
