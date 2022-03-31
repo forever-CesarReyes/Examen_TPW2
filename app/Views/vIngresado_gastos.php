@@ -25,6 +25,7 @@
             <td><?php echo $monto; ?></td>
             <td><?php echo $fecha; ?></td>
             <td><?php echo $descripcion; ?></td>
+            <td><?php echo $id_categoria; ?></td>
             <td><?php echo $id_usuario; ?></td>
 
     </tr>
