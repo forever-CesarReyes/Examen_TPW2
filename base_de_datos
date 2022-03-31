@@ -24,12 +24,8 @@ CREATE TABLE categorias(
   categoria varchar(50),
 )
 
-<<<<<<< Updated upstream
 INSERT INTO categorias (categiria) VALUES("Alimentacion");
 INSERT INTO categorias (categiria) VALUES("Vestimenta");
 INSERT INTO categorias (categiria) VALUES("Transporte");
 INSERT INTO categorias (categiria) VALUES("Entretenimiento");
 INSERT INTO categorias (categiria) VALUES("Salud");
-=======
-INSERT INTO categorias VALUES()
->>>>>>> Stashed changes
