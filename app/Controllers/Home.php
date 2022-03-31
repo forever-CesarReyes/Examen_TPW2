@@ -13,6 +13,9 @@ class Home extends BaseController
     {
         return view('vBienvenida');
     }
+    /******************************************MUsuarios***************************
+    *******************************************************************************
+    *******************************************************************************/
     public function registro(){
         return view('vRegistro');
     }
@@ -34,6 +37,56 @@ class Home extends BaseController
 
         return view("vSuccess", $datoId);
     }
+    public function ingreso(){
+      return view ('vIngreso');
+    }
+    public function mostrarRegistros()
+    {
+      $mUsuarios=new mUsuarios();
+      $all=$mUsuarios->findAll();
+      $usuarios= array('usuarios' =>$all);
+      return view("vRegistros",$usuarios);
+    }
+    public function ingresarForm()
+    {
+      $mUsuarios = new mUsuarios();
+      $correo = $_POST['correo'];
+      $contraseña = $_POST['password'];
+      $user= $mUsuarios->where('correo',$correo)->where('password',$contraseña)->first();
+      return view("vIngresado",$user);
+    }
+    public function buscarRegistro()
+    {
+      $mUsuarios = new mUsuarios();
+      $id_usuario = $_POST['id_usuario'];
+      $correo = $mUsuarios->find($id_usuario);
+      return view("vRegistroEncontrado",$correo);
+    }
+    public function actualizarRegistro()
+    {
+      $mUsuarios = new mUsuarios();
+      $id_usuario = $_POST['id_usuario'];
+      $usuarioActualizado =[
+        "nombre" => $_POST['nombre'],
+        "apellido" => $_POST['apellido'],
+        "edad" => $_POST['apellido'],
+        "correo" => $_POST['correo'],
+        "password" => $_POST['password']
+      ];
+      $mUsuarios->update($id_usuario, $usuarioActualizado);
+      return $this->mostrarRegistros();
+    }
+    public function eliminarRegistro($id)
+    {
+      $mUsuarios = new mUsuarios();
+      $id_usuario = $id;
+      $mUsuarios->delete($id_usuario);
+
+      return $this->mostrarRegistros();
+    }
+    /******************************************MGastoss***************************
+    *******************************************************************************
+    *******************************************************************************/
     public function registro_gasto(){
         return view('vRegistro_gasto');
     }
@@ -51,4 +104,5 @@ class Home extends BaseController
 
         return view("vSuccess", $datoId);
     }
+
 }
