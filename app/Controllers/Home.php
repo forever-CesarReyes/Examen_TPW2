@@ -129,7 +129,7 @@ class Home extends BaseController
     public function actualizarRegistro_gasto()
     {
       $mGastos = new mGastos();
-      $id_gasto = $_POST['id_gasto'];
+      $id_gastos = $_POST['id_gastos'];
       $gastoActualizado =[
         "moonto" => $_POST['monto'],
         "fecha" => $_POST['fecha'],
@@ -139,6 +139,14 @@ class Home extends BaseController
       ];
       $mGastos->update($id_gastos, $gastoActualizado);
       return $this->mostrarRegistrosg();
+    }
+    public function eliminarRegistro_gasto($id)
+    {
+      $mGasto = new mGasto();
+      $id_gastos = $id;
+      $mGastos->delete($id_gastos);
+
+      return $this->mostrarRegistros();
     }
 
 
