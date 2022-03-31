@@ -32,7 +32,7 @@
 </tbody>
 </table>
 <br>
-<form method="POST" action="<?php echo base_url(); ?>/TP_web/public/Home/buscarRegistro" >
+<form method="POST" action="<?php echo base_url(); ?>/Examen_TPW2/public/Home/buscarRegistro" >
 <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
 <button type="submit"> Actualizar datos</button>
 </form>
