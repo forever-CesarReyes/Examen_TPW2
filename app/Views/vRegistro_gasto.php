@@ -24,6 +24,7 @@
         <select type="text"name ="id_categoria"id="id_categoria"required>" >
          <?php echo $opciones_combo_categorias; ?>
         </select>
+        <input readonly type="text" id="id_usuario" name="id_usuario" value="<?php $id_usuario ?>"><br>
 
 
         <button type="submit"> Registrar </button>

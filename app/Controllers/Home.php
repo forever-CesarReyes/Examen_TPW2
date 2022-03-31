@@ -98,7 +98,7 @@ class Home extends BaseController
             "fecha"=>$_POST['fecha'],
             "descripcion"=>$_POST['descripcion'],
             "id_categoria"=>$_POST['id_categoria'],
-
+            "id_usuario"=>$_POST['id_usuario']
         ];
         $mGastos->insert($gastoNuevo);
         $datoId['idRegistrado'] = $mGastos->db->insertID();
