@@ -26,7 +26,7 @@
           <td><?php echo $gasto['fecha'];?></td>
           <td><?php echo $gasto['descripcion'];?></td>
           <td><?php echo $gasto['id_categoria'];?></td>
-					<td><a type="button" href="<?php echo base_url();?>/TP_web/public/Home/eliminarRegistrog/<?php echo $gasto['id_gastos'];?>">Eliminar</a></td>
+					<td><a type="button" href="<?php echo base_url();?>/Examen_TPW2/public/Home/eliminarRegistrog/<?php echo $gasto['id_gastos'];?>">Eliminar</a></td>
         </tr>
       <?php } ?>
       </tbody>
