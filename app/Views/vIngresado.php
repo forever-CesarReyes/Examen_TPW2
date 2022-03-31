@@ -28,6 +28,7 @@
             <td><?php echo $edad; ?></td>
             <td><?php echo $correo; ?></td>
             <td><?php echo $password; ?></td>
+            <td><a type="button" href="<?php echo base_url();?>/Examen_TPW2/public/Home/eliminarRegistro/<?php echo $id_usuario['id_usuario'];?>">Eliminar</a></td>
 
 
     </tr>

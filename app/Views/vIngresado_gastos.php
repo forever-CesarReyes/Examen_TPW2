@@ -28,6 +28,7 @@
             <td><?php echo $descripcion; ?></td>
             <td><?php echo $id_categoria; ?></td>
             <td><?php echo $id_usuario; ?></td>
+            <td><a type="button" href="<?php echo base_url();?>/Examen_TPW2/public/Home/eliminarRegistro_gasto/<?php echo $id_usuario['id_usuario'];?>">Eliminar</a></td>
 
     </tr>
 
