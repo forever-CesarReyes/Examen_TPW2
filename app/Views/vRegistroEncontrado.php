@@ -9,7 +9,7 @@
 <body>
  <div class="container">
      <h1>Registro encontrado</h1>
-     <form method="POST" action="<?php echo base_url(); ?>/Examen_TPW2/public/Home/actualizarRegistro">
+     <form method="POST" action="<?php echo base_url(); ?>/xam/Examen_TPW2/public/Home/actualizarRegistro">
      <input type="hidden" id="id_usuario" name="id_usuario" value="<?php echo $id_usuario; ?>">
      <label for="nombre">Nombre</label>
      <input type="nombre" name="nombre" value="<?php echo $nombre; ?>">

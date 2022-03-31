@@ -34,7 +34,7 @@
 </tbody>
 </table>
 <br>
-<form method="POST" action="<?php echo base_url(); ?>/Examen_TPW2/public/Home/buscarRegistro_gasto" >
+<form method="POST" action="<?php echo base_url(); ?>/xam/Examen_TPW2/public/Home/buscarRegistro_gasto" >
 <input type="hidden" name="id_gastos" value="<?php echo $id_gastos; ?>">
 <button type="submit"> Actualizar datos</button>
 </form>

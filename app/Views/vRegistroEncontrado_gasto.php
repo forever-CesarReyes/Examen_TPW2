@@ -7,13 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-  <?php
+  <?php 
   include_once ('funciones_comunes.php');
-  $opciones_combo_categorias=combo_categorias($id_categoria);?>
+  $opciones_combo_categorias=combo_categorias($id_categoria); ?>
  <div class="container">
      <h1>Registro encontrado</h1>
-     <form method="POST" action="<?php echo base_url(); ?>/Examen_TPW2/public/Home/actualizarRegistro_gasto">
-     <input type="hidden" id="id_gastos" name="id_gastos" value="<?php echo $id_gatos; ?>">
+     <form method="POST" action=" /xam/Examen_TPW2/public/Home/actualizarRegistro_gasto">
+     <input type="hidden" id="id_gastos" name="id_gastos" value="<?php echo $id_gastos; ?>">
      <label for="monto">Monto</label>
      <input type="monto" name="monto" value="<?php echo $monto; ?>">
      <label for="fecha"> Fecha </label>
@@ -22,7 +22,7 @@
      <input type="text" name="descripcion" value="<?php echo $descripcion; ?>">
      <label for="id_categoria">Categoria</label>
      <select type="text"name ="id_categoria"id="id_categoria"required value="<?php echo $id_categoria?>" >
-      <?php echo $opciones_combo_categorias; ?>
+      <?php  echo $opciones_combo_categorias; ?>
      </select>
 
      <button type="submit">Actualizar</button>

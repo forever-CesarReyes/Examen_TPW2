@@ -10,7 +10,7 @@ protected $useAutoIncrement = true;
 protected $returnType = 'array';
 protected $useSoftDeletes = true;
 
-protected $allowedFields = ['monto','fecha','descripcion','id_categoria'];
+protected $allowedFields = ['monto','fecha','descripcion','id_categoria','id_usuario'];
 
 
 protected $useTimestamps = false;
