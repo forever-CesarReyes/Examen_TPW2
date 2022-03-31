@@ -8,7 +8,10 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        return view('vIngreso');
+    }
+    public function login(){
+        return view('vLogin');
     }
     public function bienvenida()
     {
@@ -109,5 +112,14 @@ class Home extends BaseController
       $gastos= array('gastos' =>$all);
       return view("vRegistrosgastos",$gastos);
     }
+    public function gastosusuario(){
+    
+      $mGastos = new mGastos();
+      $id_usuario = $_POST['id_usuario'];
+      
+      return view("vRegistrg",$id_usuario);
 
+
+    }
+ 
 }

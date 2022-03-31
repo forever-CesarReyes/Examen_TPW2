@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Registro actual ingresado </h1>
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>
@@ -17,6 +17,7 @@
                 <th>edad</th>
                 <th>Correo</th>
                 <th>Contraseña</th>
+                <th>acciones</th>
             </tr>
         </thead>
     <tbody>
@@ -27,6 +28,8 @@
             <td><?php echo $edad; ?></td>
             <td><?php echo $correo; ?></td>
             <td><?php echo $password; ?></td>
+            
+            
     </tr>
 
 </tbody>
@@ -35,6 +38,10 @@
 <form method="POST" action="<?php echo base_url(); ?>/Examen_TPW2/public/Home/buscarRegistro" >
 <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
 <button type="submit"> Actualizar datos</button>
+</form>
+<form method="POST" action="./gastosusuario" >
+<input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
+<button type="submit"> Gastos</button>
 </form>
 
 
