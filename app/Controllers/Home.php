@@ -85,7 +85,7 @@ class Home extends BaseController
 
       return $this->mostrarRegistros();
     }
-    /******************************************MGastoss***************************
+    /******************************************MGastos***************************
     *******************************************************************************
     *******************************************************************************/
     public function registro_gasto(){
@@ -112,14 +112,20 @@ class Home extends BaseController
       $gastos= array('gastos' =>$all);
       return view("vRegistrosgastos",$gastos);
     }
+    /*registros gastos*/
     public function gastosusuario(){
-    
       $mGastos = new mGastos();
       $id_usuario = $_POST['id_usuario'];
-      
-      return view("vRegistrg",$id_usuario);
-
-
+      $user= $mGastos->where('id_usuario',$id_usuario)->first();
+      return view("vIngresado_gastos",$user);
     }
- 
+    public function buscarRegistro_gasto()
+    {
+      $mGastos = new mGastos();
+      $id_gastos = $_POST['id_gastos'];
+      $user = $mGastos->find($id_gastos);
+      return view("vRegistroEncontrado_gasto",$correo);
+    }
+
+
 }

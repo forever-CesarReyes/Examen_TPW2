@@ -28,8 +28,8 @@
             <td><?php echo $edad; ?></td>
             <td><?php echo $correo; ?></td>
             <td><?php echo $password; ?></td>
-            
-            
+
+
     </tr>
 
 </tbody>
@@ -39,7 +39,7 @@
 <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
 <button type="submit"> Actualizar datos</button>
 </form>
-<form method="POST" action="./gastosusuario" >
+<form method="POST" action="<?php echo base_url(); ?>/Examen_TPW2/public/Home/gastosusuario" >
 <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
 <button type="submit"> Gastos</button>
 </form>
