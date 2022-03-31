@@ -15,8 +15,8 @@
                 <th>Monto</th>
                 <th>Fecha</th>
                 <th>Descripcion</th>
-                
-                <th>id usuario</th>
+                <th>Id_categoria</th>
+                <th>Id usuario</th>
                 <th>acciones</th>
             </tr>
         </thead>
