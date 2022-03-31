@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\mUsuarios;
+use App\Models\mGastos;
 
 class Home extends BaseController
 {
@@ -97,9 +98,16 @@ class Home extends BaseController
 
         ];
         $mGastos->insert($gastoNuevo);
-        $datoId['idRegistrado'] = $mGasto->db->insertID();
+        $datoId['idRegistrado'] = $mGastos->db->insertID();
 
-        return view("vSuccess", $datoId);
+        return view("vSuccessgasto", $datoId);
+    }
+    public function mostrarRegistrosg()
+    {
+      $mGastos=new mGastos();
+      $all=$mGastos->findAll();
+      $gastos= array('gastos' =>$all);
+      return view("vRegistrosgastos",$gastos);
     }
 
 }
