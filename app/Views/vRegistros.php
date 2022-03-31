@@ -25,7 +25,7 @@
           <td><?php echo $usuario['nombre'];?></td>
           <td><?php echo $usuario['apellido'];?></td>
           <td><?php echo $usuario['correo'];?></td>
-          <td><?php echo $usuario['contraseña'];?></td>
+          <td><?php echo $usuario['password'];?></td>
 					<td><a type="button" href="<?php echo base_url();?>/TP_web/public/Home/eliminarRegistro/<?php echo $usuario['id_usuario'];?>">Eliminar</a></td>
         </tr>
       <?php } ?>

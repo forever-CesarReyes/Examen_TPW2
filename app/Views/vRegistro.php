@@ -19,7 +19,7 @@
         <label for="edad">edad</label>
         <input type="text" id="edad" name="edad"><br>
         <label for="correo">Email</label>
-        <input type="correo" id="correo" name="correo"
+        <input type="email" id="correo" name="correo"
         placeholder="email@example.com"><br>
         <label for="password">Password</label>
         <input type="password" id="password" name="password"><br>

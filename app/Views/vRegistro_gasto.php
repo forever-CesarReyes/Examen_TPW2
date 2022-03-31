@@ -13,7 +13,7 @@
     <form method="POST" action="../Home/insertarForm_gasto">
 
         <label for="monto">monto</label>
-        <input type="text" id="nombre" name="nombre"><br>
+        <input type="text" id="monto" name="monto"><br>
         <label for="fecha">fecha</label>
         <input type="date" id="fecha" name="fecha"><br>
         <label for="descripcion">descripcion</label>

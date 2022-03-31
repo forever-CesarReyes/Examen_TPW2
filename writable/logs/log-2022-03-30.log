@@ -1,0 +1,107 @@
+CRITICAL - 2022-03-30 23:09:10 --> Cannot redeclare App\Controllers\Home::registro_gasto()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-30 23:10:01 --> Cannot redeclare App\Controllers\Home::registro_gasto()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-03-30 23:11:38 --> Unknown column 'usuarios.deleted_at' in 'where clause'
+CRITICAL - 2022-03-30 23:11:38 --> Unknown column 'usuarios.deleted_at' in 'where clause'
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\xam\Examen_TPW2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(46): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->mostrarRegistros()
+#8 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-03-30 23:12:56 --> Unknown column 'usuarios.deleted_at' in 'where clause'
+CRITICAL - 2022-03-30 23:12:56 --> Unknown column 'usuarios.deleted_at' in 'where clause'
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\xam\Examen_TPW2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(46): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->mostrarRegistros()
+#8 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-03-30 23:15:37 --> Undefined index: contraseña
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\app\Views\vRegistros.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 28, Array)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\View\View.php(210): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\Common.php(1089): CodeIgniter\View\View->render('vRegistros', Array, true)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(48): view('vRegistros', Array)
+#5 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->mostrarRegistros()
+#6 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-30 23:22:27 --> Cannot redeclare App\Controllers\Home::registro_gasto()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-30 23:23:37 --> Class 'App\Controllers\mGastos' not found
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->insertarForm_gasto()
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-30 23:24:43 --> Undefined index: monto
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 97, Array)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->insertarForm_gasto()
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-30 23:24:56 --> Undefined index: monto
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 97, Array)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->insertarForm_gasto()
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-30 23:25:25 --> Undefined index: monto
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 97, Array)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->insertarForm_gasto()
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-30 23:25:55 --> Undefined variable: mGasto
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp2\\htdoc...', 104, Array)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->insertarForm_gasto()
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-03-30 23:37:29 --> Unknown column 'gastos_p.deleted_at' in 'where clause'
+CRITICAL - 2022-03-30 23:37:29 --> Unknown column 'gastos_p.deleted_at' in 'where clause'
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\xam\Examen_TPW2\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(112): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->mostrarRegistrosg()
+#8 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-03-30 23:38:38 --> Undefined index: id_gasto
+#0 C:\xampp2\htdocs\xam\Examen_TPW2\app\Views\vRegistrosgastos.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp2\\htdoc...', 29, Array)
+#1 C:\xampp2\htdocs\xam\Examen_TPW2\system\View\View.php(210): include('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\xam\Examen_TPW2\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp2\htdocs\xam\Examen_TPW2\system\Common.php(1089): CodeIgniter\View\View->render('vRegistrosgasto...', Array, true)
+#4 C:\xampp2\htdocs\xam\Examen_TPW2\app\Controllers\Home.php(114): view('vRegistrosgasto...', Array)
+#5 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(825): App\Controllers\Home->mostrarRegistrosg()
+#6 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp2\htdocs\xam\Examen_TPW2\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\xam\Examen_TPW2\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

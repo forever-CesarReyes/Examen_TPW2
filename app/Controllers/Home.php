@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\mUsuarios;
+use App\Models\mGastos;
 
 class Home extends BaseController
 {
@@ -19,9 +20,9 @@ class Home extends BaseController
     public function registro(){
         return view('vRegistro');
     }
-    public function registro_gasto(){
+   /* public function registro_gasto(){
         return view('vRegistro_gasto');
-    }
+    }*/
     public function insertarForm(){
         $mUsuarios = new mUsuarios();
         $usuarioNuevo = [
@@ -100,9 +101,17 @@ class Home extends BaseController
 
         ];
         $mGastos->insert($gastoNuevo);
-        $datoId['idRegistrado'] = $mGasto->db->insertID();
+        $datoId['idRegistrado'] = $mGastos->db->insertID();
 
-        return view("vSuccess", $datoId);
+        return view("vSuccessgasto", $datoId);
+    }
+
+    public function mostrarRegistrosg()
+    {
+      $mGastos=new mGastos();
+      $all=$mGastos->findAll();
+      $gastos= array('gastos' =>$all);
+      return view("vRegistrosgastos",$gastos);
     }
 
 }
