@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>hola</h2>
+    <?php
+     header("Location: Examen_TPW2/public/Home/login?");
+    ?>
 </body>
 </html>
