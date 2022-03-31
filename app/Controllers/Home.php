@@ -131,7 +131,7 @@ class Home extends BaseController
       $mGastos = new mGastos();
       $id_gastos = $_POST['id_gastos'];
       $gastoActualizado =[
-        "moonto" => $_POST['monto'],
+        "monto" => $_POST['monto'],
         "fecha" => $_POST['fecha'],
         "descripcion" => $_POST['descripcion'],
         "id_categoria" => $_POST['id_categoria'],
