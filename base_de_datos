@@ -24,8 +24,8 @@ CREATE TABLE categorias(
   categoria varchar(50),
 )
 
-INSERT INTO categorias (categiria) VALUES("Alimentacion");
-INSERT INTO categorias (categiria) VALUES("Vestimenta");
-INSERT INTO categorias (categiria) VALUES("Transporte");
-INSERT INTO categorias (categiria) VALUES("Entretenimiento");
-INSERT INTO categorias (categiria) VALUES("Salud");
+INSERT INTO categorias (categoria) VALUES("Alimentacion");
+INSERT INTO categorias (categoria) VALUES("Vestimenta");
+INSERT INTO categorias (categoria) VALUES("Transporte");
+INSERT INTO categorias (categoria) VALUES("Entretenimiento");
+INSERT INTO categorias (categoria) VALUES("Salud");
