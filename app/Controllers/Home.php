@@ -89,9 +89,6 @@ class Home extends BaseController
     *******************************************************************************
     *******************************************************************************/
     public function registro_gasto(){
-      $data = array(
-        'id_usuario' => $_POST['id_usuario']
-        );
         return view('vRegistro_gasto',$data);
     }
     public function insertarForm_gasto(){
