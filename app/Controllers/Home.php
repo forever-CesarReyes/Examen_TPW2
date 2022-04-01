@@ -61,7 +61,7 @@ class Home extends BaseController
       $mUsuarios = new mUsuarios();
       $id_usuario = $_POST['id_usuario'];
       $user= $mUsuarios->where('id_usuario',$id_usuario)->first();
-      return view("vRegistroEncontrado",$correo);
+      return view("vRegistroEncontrado",$user);
     }
     public function actualizarRegistro()
     {
