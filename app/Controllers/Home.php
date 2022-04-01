@@ -60,7 +60,7 @@ class Home extends BaseController
     {
       $mUsuarios = new mUsuarios();
       $id_usuario = $_POST['id_usuario'];
-      $correo = $mUsuarios->find($id_usuario);
+      $user= $mUsuarios->where('id_usuario',$id_usuario)->first();
       return view("vRegistroEncontrado",$correo);
     }
     public function actualizarRegistro()
@@ -123,8 +123,8 @@ class Home extends BaseController
     {
       $mGastos = new mGastos();
       $id_gastos = $_POST['id_gastos'];
-      $user = $mGastos->find($id_gastos);
-      return view("vRegistroEncontrado_gasto",$correo);
+      $user =$mGastos->where('id_gastos',$id_gastos)->first();
+      return view("vRegistroEncontrado_gasto",$user);
     }
     public function actualizarRegistro_gasto()
     {
