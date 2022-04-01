@@ -11,7 +11,6 @@
     <?php
     include_once ('funciones_comunes.php');
     $opciones_combo_categorias=combo_categorias();
-    $id_usuario=$_POST['id_usuario'];
     ?>
     <div class="container">
     <h1>Encuesta a clientes</h1>
