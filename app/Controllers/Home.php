@@ -90,8 +90,11 @@ class Home extends BaseController
     *******************************************************************************/
     public function registro_gasto(){
       $mGastos = new mGastos();
-      $id_usuario = $_POST['id_usuario'];
-        return view('vRegistro_gasto',$id_usuario);
+      $gastoNuevo = [
+          "id_usuario"=>$_POST['id_usuario']
+      ];
+      $mGastos->insert($gastoNuevo);
+        return view('vRegistro_gasto',$mGastos);
     }
     public function insertarForm_gasto(){
         $mGastos = new mGastos();
