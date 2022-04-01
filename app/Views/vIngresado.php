@@ -40,10 +40,12 @@
 <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
 <button type="submit"> Actualizar datos</button>
 </form>
+<br>
 <form method="POST" action="<?php echo base_url(); ?>/xam/Examen_TPW2/public/Home/registro_gasto" >
 <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
 <button type="submit"> Agregar Gastos</button>
 </form>
+<br>
 <form method="POST" action="<?php echo base_url(); ?>/xam/Examen_TPW2/public/Home/gastosusuario" >
 <input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
 <button type="submit"> Gastos</button>
