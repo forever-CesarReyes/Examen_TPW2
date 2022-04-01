@@ -89,7 +89,7 @@ class Home extends BaseController
     *******************************************************************************
     *******************************************************************************/
     public function registro_gasto(){
-        return view('vRegistro_gasto',$data);
+        return view('vRegistro_gasto');
     }
     public function insertarForm_gasto(){
         $mGastos = new mGastos();

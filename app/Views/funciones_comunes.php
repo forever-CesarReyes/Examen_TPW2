@@ -28,7 +28,7 @@ function combo_categorias($id_categoria=0)
 
    function combo_usuarios($id_usuario=0)
      {
-   	$conexion =new mysqli("localhost","root","","usuarios");
+   	$conexion =new mysqli("localhost","root","","gastos");
 
        $sql="SELECT * FROM usuarios";
 
